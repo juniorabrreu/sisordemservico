@@ -1,0 +1,134 @@
+@import url(https://fonts.google.com/specimen/Doppio+One);
+
+body{
+    background-image: url(../img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+#navbar{
+    background-color: black;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+
+}
+
+#logo{
+    position: absolute;
+    
+
+}
+
+.logo img{
+    position: absolute;
+    width: 160px;
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+
+
+#botao{
+    background-color: black;
+    border: none;
+    height: 60px;
+    margin-right: 45px;
+    width: 100px;
+}
+#botao:hover{
+    background-color: rgb(255, 103, 55);
+    transition: 0.5s;
+}
+#botao:focus{
+    background-color: rgb(255, 103, 55);
+    
+}
+
+#fonte{
+    color: white;
+    
+    font-size: 20px;
+}
+
+#text{
+   margin-left: 260px;
+   margin-top: 340px;
+   align-self: center;
+   font-size: 100px;
+   line-height: 110px;
+}
+
+#detalhe{
+    position: absolute;
+    width: 15px;
+    height: 450px;
+    background-color: rgb(238, 62, 7, 0.9);
+    border-radius: 10px;
+    margin-left: 230px;
+   margin-top: 290px;
+}
+/*responsividade*/
+@media (max-width:868px){
+    body{
+        background-image: url(../img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+    
+    }
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        margin-left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        
+    }
+    #botao{
+        background-color: black;
+        border: none;
+        height: 60px;
+        margin-right: 45px;
+        width: 100px;
+    }
+    #botao:hover{
+        background-color: rgb(255, 103, 55);
+        transition: 0.5s;
+    }
+    #fonte{
+        color: white;
+        font-size: 5px;
+        
+    }
+    #text{
+        margin-left: 10px;
+        margin-top: 10px;
+        align-self: center;
+        font-size: 25px;
+        line-height: 30px;
+     }
+    #detalhe{
+        position: absolute;
+        width: 3,5px;
+        height: 112px;
+        background-color: rgb(238, 62, 7, 0.9);
+        border-radius: 10px;
+        margin-left: 10px;
+       margin-top: 10px;
+    }
+}

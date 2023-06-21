@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0%
+    
+}
+
+
+
+
+.container-login{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#fotousu {
+    position: relative;
+    margin-top: 10px;
+
+}
+#fotousu img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: 150%;
+}
+
+
+.img-box{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 103, 55);
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
+.img-box img{
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    display: block;
+    
+}
+
+.content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    margin-left: 12%;
+}
+
+.content-box .form-box{
+    width: 50%;
+    margin-top: -200px;
+}
+
+.content-box .form-box.input-box{
+    margin-bottom: 20px;
+}
+/*Estilizando o input*/
+.content-box .form-box .input-box input{
+    width: 550%;
+    padding: 20px;
+    outline: none;
+    border-radius: 15px;
+    border: 3px solid #D9D9D9;
+    font-size: 17px; 
+    
+}
+
+/*Estilizando input quando estiver sendo acessado pelo usuario*/
+.content-box .form-box .input-box input:focus{
+    width: 550%;
+    padding: 20px;
+    outline: none;
+    border-radius: 15px;
+    border: 3px solid rgb(255, 103, 55);
+    font-size: 17px; 
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*colocando icone no input*/
+#user{
+    background-image: url("../modal/img/user.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 20px;
+    padding-left: 34px;
+}
+#senha{
+    background-image: url("../modal/img/senha.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 20px;
+    padding-left: 34px;
+}
+
+
+.content-box .form-box .input-box input::placeholder{
+    color: #B6B6B6;
+}
+
+
+label{
+    color: #B6B6B6;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    left: 150%;
+    margin-right: -60%;
+    margin-top: 20px;
+}
+
+/*Estilizando botao gogle*/
+#google{
+    background-image: url("../modal/img/2965278.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 12px;
+    position: absolute;
+    width: 15%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4285F4;
+    color: white;
+    margin-top: 60px;
+    left: 62%;
+    margin-right: -50%;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-box .form-box .input-box input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 160px;
+    background-color: #FF6737;
+    color: white;
+    border: none;
+    width: 10%;
+    border-radius: 50px;
+    cursor: pointer;
+    left: 64.5%;
+    margin-right: -50%;
+    font-weight: 500;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box .form-box .input-box input[type=submit]:hover{
+    background-color: #d65731;
+    transition: 0.5s;
+}
+
+/*deixando (ou tentando) deixar responsivo*/
+@media (max-width:868px){
+    .container-login .img-box{
+        display: none;
+        width: 50%;
+    }
+    #fotousu {
+        position: relative;
+        margin-top: 10px;
+    
+    }
+    #fotousu img{
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin-left: 10%;
+    }
+    .container-login .content-box{
+        width: 100%;
+    }
+    .container-login .content-box .form-box{
+        width: 100%;
+        padding: 40px;
+        background-color: white;
+        margin: 50px;
+    }
+    .content-box .form-box .input-box input{
+        width: 100%;
+        padding: 20px;
+        outline: none;
+        border-radius: 15px;
+        border: 3px solid #D9D9D9;
+        font-size: 17px; 
+        
+    }
+    .content-box .form-box .input-box input:focus{
+        width: 100%;
+        padding: 20px;
+        outline: none;
+        border-radius: 15px;
+        border: 3px solid rgb(255, 103, 55);
+        font-size: 17px; 
+        transition: 0.5s;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    label{
+        display: none;
+    }
+    #google{
+        background-image: url("../modal/img/2965278.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: 12px;
+        position: absolute;
+        width: 250px;
+        height: 55px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4285F4;
+        color: white;
+        margin-top: 60px;
+        left: 37%;
+        margin-right: -40%;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    .content-box .form-box .input-box input[type=submit]{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        margin-top: 160px;
+        background-color: #FF6737;
+        color: white;
+        border: none;
+        width: 110px;
+        border-radius: 50px;
+        cursor: pointer;
+        left: 53%;
+        margin-right: -40%;
+        font-weight: 500;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+}

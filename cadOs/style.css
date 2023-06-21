@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: rgb(217, 217, 217);
+}
+
+.wrapper .sidebar{
+    background: rgb(39, 36, 36);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: left;
+}
+.wrapper .sidebar .profile_picture{
+    margin-bottom: 50px;
+    text-align: center;
+    
+
+}
+
+/*Imagem de usuário*/
+.wrapper .sidebar .profile .imagem-perfil{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.wrapper .sidebar .profile .link{
+    text-decoration: none;
+    color: rgb(254, 125, 52);
+    font-weight: bold;
+}
+
+/* Imagem Logo */
+.wrapper .sidebar .profile .image img{
+    display: block;
+    width: 255px;
+    height: 100%;
+    position: fixed; bottom: 0; width: 230px; height: 250px;;
+    
+    
+
+}
+
+.wrapper .sidebar .profile img{
+    
+    width: 150px;
+    height: 150px;
+    
+}
+
+
+
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 0px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #ffffff;
+    text-decoration: none;
+    background:rgb(254, 125, 52);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #ffffff;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+
+
+/* Configuraaoes do NavBar*/
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background:  rgb(39, 36, 36);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: rgb(254, 125, 52);
+}
+
+body.active .wrapper .sidebar{
+    left: -255px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+/*Elementos fora do side bar*/
+.main{
+    margin-right: 6px;
+    margin-left: 265px;
+    overflow: hidden;
+}
+
+/*tabela*/
+
+.box{
+    background-color: white;
+    width: 900px;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#x{
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(254, 125, 52);
+}
+
+#form{
+    padding: 30px;
+}
+
+.form-select{
+    background-color: white;
+    border-color: #CCC9C9 ;
+    border-radius: 15px;
+    height: 45px;
+    width: 380px;
+    display: block;
+}
+
+#serviço{
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+#codigo{
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+/*outros inputs*/
+input[type=number]{
+    background-color: white;
+    border-color: #CCC9C9 ;
+    border-radius: 15px;
+    height: 45px;
+    width: 380px;
+    display: block;
+    
+}
+
+#quantidade{
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#data{
+    float: left;
+    margin-right: 20px;
+}
+
+input[type=date]{
+    background-color: white;
+    border-color: #CCC9C9 ;
+    border-radius: 15px;
+    height: 45px;
+    width: 190px;
+    display: block;
+}
+input[type=time]{
+    background-color: white;
+    border-color: #CCC9C9 ;
+    border-radius: 15px;
+    height: 45px;
+    width: 190px;
+    display: block;
+    margin-left: 20px;
+}
+
+input[type=submit]{
+    background-color: rgb(254, 125, 52);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 98%;
+    margin-left: auto;
+    height: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}

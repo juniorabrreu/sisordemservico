@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Lateral</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+           <!--profile image & text-->
+            <!--menu item-->
+            <div class="profile">
+                
+                <div class="profile_picture">
+                <img class="imagem-perfil" src="img/Novo Projeto.png" alt="profile_picture">
+                <p><a class="link" href="#"> Editar perfil</a></p>
+                </div>
+                <ul>
+        
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="item">Página Inicial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ordemS.html">
+                            <span class="icon"><i class="fa-solid fa-file"></i></span>
+                            <span class="item">Ordem de Serviço</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-laptop"></i></span>
+                            <span class="item">Equipamentos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="item">Clientes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-sharp fa-solid fa-screwdriver-wrench"></i></span>
+                            <span class="item">Serviços</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                            <span class="item">Sobre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i></span>
+                            <span class="item">Sair</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="image">
+                <div id="logo">
+                    <img src="img/logo.png">
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Texto página inicial-->
+        <div class="pginicial">
+
+         
+            <div class="texto">
+                <h1>Bem vindo(a), Hevelin!</h1>
+            </div>
+            
+            
+            <div class="card">
+                <div class="linha">
+                    <p> <span class="icon"><i class="fa-solid fa-earth-europe"></i></span> Online agora</p>
+                </div>
+                   
+            </div>
+
+            <div class="segcard">
+                <div class="linhaseg">
+                    <p> <span class="icon"><i class="fa-sharp fa-solid fa-file"></i></span> Emissões desse mês</p>
+                </div>
+            </div>
+
+            <div class="tercard">
+                <div class="linhater">
+                    <p> <span class="icon"><i class="fa-sharp fa-solid fa-comments"></i></span> Comentários</p>
+                </div>
+                
+                <img src="img/usuariooo.png" width="50px" height="50px">
+                
+            </div>
+    
+        
+          </div>
+          </div>
+    </div>
+
+
+
+
+    <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+
+    <script src="https://kit.fontawesome.com/39716bd3c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
